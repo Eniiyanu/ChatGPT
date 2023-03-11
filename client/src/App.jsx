@@ -1,5 +1,5 @@
 import { useState } from "react"
-import {BrowserRouter as Router, Switch, Route, BrowserRouter} from "react-router-dom"
+import {BrowserRouter as Router, Switch, Routes, Route, BrowserRouter} from "react-router-dom"
 
 
 function App() {
