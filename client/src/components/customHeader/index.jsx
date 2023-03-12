@@ -1,5 +1,5 @@
 import React from "react";
-import { ChatBubbleLeftRightIcon, PhoneIcon } from "@heroicons/react/outline";
+import { ChatBubbleLeftRightIcon, PhoneIcon } from "@heroicons/react/24/solid";
 const customHeader = ({ chat }) => {
   return (
     <div className="chat-header">
