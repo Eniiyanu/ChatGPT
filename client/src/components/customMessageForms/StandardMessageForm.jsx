@@ -48,6 +48,9 @@ const StandardMessageForm = () => {
               setAttachment( acceptedFiles[0]);
               setPreview(URL.createObjectURL(acceptedFiles[0]));
             }}
+            {({getRootProps, getInputProps}) => (
+              <div {...getRootProps()}>
+                <input {...getInputProps()} />
           </Dropzone>
         </div>
       </div>
