@@ -46,7 +46,7 @@ const StandardMessageForm = () => {
             noClick={true}
             onDrop{ (acceptedFiles) => {
               setAttachment( acceptedFiles[0]);
-              setPreview
+              setPreview(URL.createObjectURL(acceptedFiles[0]));
             }}
           </Dropzone>
         </div>
