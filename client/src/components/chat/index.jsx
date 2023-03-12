@@ -2,7 +2,7 @@ import React from 'react'
 import { useMultiChatLogic, MultiChatSocket, MultiChatWindow } from 'react-chat-engine-advanced'
 import Header  from '@/components/customHeader'
 const Chat = () => {
-console
+
     const chatProps  = useMultiChatLogic(
         import.meta.env.VITE_CHAT_ENGINE_PROJECT_ID,
         "Enii",
