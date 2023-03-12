@@ -51,6 +51,8 @@ const StandardMessageForm = () => {
             {({getRootProps, getInputProps}) => (
               <div {...getRootProps()}>
                 <input {...getInputProps()} />
+                </div>
+            )}
           </Dropzone>
         </div>
       </div>
