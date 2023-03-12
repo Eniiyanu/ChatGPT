@@ -4,9 +4,9 @@ import Header  from '@/components/customHeader'
 const Chat = () => {
 
     const chatProps  = useMultiChatLogic(
-        import.meta.env.VITE_CHAT_ENGINE_PROJECT_ID,
+        import.meta.env.VITE_PROJECT_ID,
         "Enii",
-        "test"
+        "Test"
     )
   return <div style={{flexBasis: "100%"}}>
   <MultiChatSocket {...chatProps} />
