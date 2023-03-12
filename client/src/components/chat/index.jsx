@@ -1,6 +1,7 @@
 import React from 'react'
 import { useMultiChatLogic, MultiChatSocket, MultiChatWindow } from 'react-chat-engine-advanced'
 import Header  from '@/components/customHeader'
+import StandardMessageForm from '@/components/customMessageFroms/StandardMessageForm'
 const Chat = () => {
 
     const chatProps  = useMultiChatLogic(
@@ -16,10 +17,11 @@ const Chat = () => {
         renderMessageForm={(props)} =>  {
           return ( 
             <StandardMessageForm props={props} activeChat={chatProps.chat}/>
-        ) }}
+        ) 
+        }}
      />
   </div>;
-  )
-}
+  );
+};
 
 export default Chat
