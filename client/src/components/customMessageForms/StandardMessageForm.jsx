@@ -36,7 +36,7 @@ const StandardMessageForm = () => {
             type="text"
             value={message}
             onChange={handleChange}
-            placeholder="Type a message..."
+            placeholder="Type a message to be sent..."
           />
         </div>
         <div  className="message-form-icons">
