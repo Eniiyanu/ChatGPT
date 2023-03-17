@@ -41,7 +41,7 @@ const StandardMessageForm = () => {
         </div>
         <div  className="message-form-icons">
           <Dropzone>
-            acceptedFiles=".jpg,.jpeg,.png,.gif,.bmp,.tiff"
+            acceptedFiles=".jpg,.jpeg,.png,.gif,.tiff"
             multiple={false}
             noClick={true}
             onDrop{ (acceptedFiles) => {
