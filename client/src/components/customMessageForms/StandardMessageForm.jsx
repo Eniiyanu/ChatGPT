@@ -1,5 +1,5 @@
 import { XMarkIcon } from "@heroicons/react/24/solid";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Dropzone from "react-dropzone";
 
 const StandardMessageForm = () => {
@@ -9,7 +9,7 @@ const StandardMessageForm = () => {
   const handleChange = (e) => {
     setMessage(e.target.value);
   };
-
+//message form
   return (
     <div className="message-form-container">
       {preview && (
@@ -36,22 +36,22 @@ const StandardMessageForm = () => {
             type="text"
             value={message}
             onChange={handleChange}
-            placeholder="Type your message here..."
+            placeholder="Type your message here."
           />
         </div>
-        <div  className="message-form-icons">
+        <div className="message-form-icons">
           <Dropzone>
-            acceptedFiles=".jpg,.jpeg,.png,.gif,.tiff"
-            multiple={false}
+            acceptedFiles=".jpg,.jpeg,.png,.gif,.tiff" multiple={false}
             noClick={true}
-            onDrop{ (acceptedFiles) => {
-              setAttachment( acceptedFiles[0]);
+            onDrop
+            {(acceptedFiles) => {
+              setAttachment(acceptedFiles[0]);
               setPreview(URL.createObjectURL(acceptedFiles[0]));
             }}
-            {({getRootProps, getInputProps}) => (
+            {({ getRootProps, getInputProps }) => (
               <div {...getRootProps()}>
                 <input {...getInputProps()} />
-                </div>
+              </div>
             )}
           </Dropzone>
         </div>
